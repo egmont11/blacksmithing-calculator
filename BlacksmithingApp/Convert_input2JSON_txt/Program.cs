@@ -55,5 +55,9 @@ class Program
             new HiltCost("Noble Hilt", 6, 4, 10, false, false, 5),
             new HiltCost("Mythic Hilt", 6, 4, 10, false, false, 5)
         };
+        
+        JsonFileUtils.SimpleWrite(BladeCosts(), "BladeCosts.json");
+        JsonFileUtils.SimpleWrite(GuardCosts(), "GuardCosts.json");
+        JsonFileUtils.SimpleWrite(HiltCosts(), "HiltCosts.json");
     }
 }
