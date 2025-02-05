@@ -42,6 +42,18 @@ class Program
             new("Exotic guard", 6, 0, 10, false, false, 0),
         };
         
-        
+        static List<HiltCost> HiltCosts() => new()
+        {
+            new HiltCost("Basic Hilt", 0, 5, 3, false, false, 0),
+            new HiltCost("Classy Hilt", 4, 5, 4, false, false, 0),
+            new HiltCost("Hilt w/ Guard", 5, 5, 5, false, false, 0),
+            new HiltCost("Small Hilt", 3, 4, 6, false, false, 0),
+            new HiltCost("Long Handle", 0, 10, 7, false, false, 0),
+            new HiltCost("Medium Handle", 0, 8, 7, false, false, 0),
+            new HiltCost("Fancy Hilt", 5, 5, 8, false, false, 0),
+            new HiltCost("Banded Long Handle", 2, 10, 9, false, false, 0),
+            new HiltCost("Noble Hilt", 6, 4, 10, false, false, 5),
+            new HiltCost("Mythic Hilt", 6, 4, 10, false, false, 5)
+        };
     }
 }
