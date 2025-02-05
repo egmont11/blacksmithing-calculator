@@ -31,12 +31,11 @@ partial class Form1
     {
         SuspendLayout();
         // 
-        // Blacksmithing Calculator
+        // Form1
         // 
         AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
         AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
         ClientSize = new System.Drawing.Size(1258, 724);
-        Name = "Blacksmithing Calculator";
         StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds;
         Text = "Blacksmithing Calculator";
         ResumeLayout(false);

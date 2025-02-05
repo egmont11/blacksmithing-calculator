@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlacksmithingApp_WinForms", "BlacksmithingApp_WinForms\BlacksmithingApp_WinForms.csproj", "{F999AED4-0241-4770-8776-52E4F656754C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Convert_input2JSON_txt", "Convert_input2JSON_txt\Convert_input2JSON_txt.csproj", "{ECA89C75-8F66-45D8-967D-E927318EA191}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{F999AED4-0241-4770-8776-52E4F656754C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F999AED4-0241-4770-8776-52E4F656754C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F999AED4-0241-4770-8776-52E4F656754C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECA89C75-8F66-45D8-967D-E927318EA191}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECA89C75-8F66-45D8-967D-E927318EA191}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECA89C75-8F66-45D8-967D-E927318EA191}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECA89C75-8F66-45D8-967D-E927318EA191}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
