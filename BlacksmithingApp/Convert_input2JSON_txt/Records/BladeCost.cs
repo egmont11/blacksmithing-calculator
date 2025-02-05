@@ -8,4 +8,4 @@ public record BladeCost(
     bool HQMRequired,
     bool LoyaltyCoinRequired,
     int PremsCost
-    );
+);
