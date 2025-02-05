@@ -20,7 +20,6 @@ public partial class Form1 : Form
     public Form1()
     {
         InitializeComponent();
-        this.Size = new Size(800, 600);  // Make form bigger
         LoadData();
         InitializeControls();
         SetupLayout();
@@ -31,13 +30,6 @@ public partial class Form1 : Form
         _jsonBladeCosts = JsonUtils.SimpleReadBlades("data/BladeCosts.json");
         _jsonGuardCosts = JsonUtils.SimpleReadGuards("data/GuardCosts.json");
         _jsonHiltCosts = JsonUtils.SimpleReadHilts("data/Hiltcosts.json");
-    
-        // Debug output
-        Console.WriteLine("Loaded Blades:");
-        foreach (var blade in _jsonBladeCosts)
-        {
-            Console.WriteLine($"{blade.WeaponPartName}: Metal {blade.MetalCost}, Other {blade.OtherMaterialCost}");
-        }
     }
     
     private void InitializeControls()
@@ -130,10 +122,38 @@ public partial class Form1 : Form
             Padding = new Padding(20)
         };
 
-        // Section Headers
-        Label bladeLabel = new Label { Text = "Blade", Font = new Font(Font.FontFamily, 12, FontStyle.Bold) };
-        Label guardLabel = new Label { Text = "Guard", Font = new Font(Font.FontFamily, 12, FontStyle.Bold) };
-        Label hiltLabel = new Label { Text = "Hilt", Font = new Font(Font.FontFamily, 12, FontStyle.Bold) };
+        // Set row heights as percentages
+        mainLayout.RowStyles.Add(new RowStyle(SizeType.Percent, 15)); // Header row
+        mainLayout.RowStyles.Add(new RowStyle(SizeType.Percent, 35)); // ComboBox row
+        mainLayout.RowStyles.Add(new RowStyle(SizeType.Percent, 50)); // Totals row
+
+        // Set column widths to be equal
+        mainLayout.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.33F));
+        mainLayout.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.33F));
+        mainLayout.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.33F));
+
+        // Section Headers with adjusted height
+        Label bladeLabel = new Label 
+        { 
+            Text = "Blade", 
+            Font = new Font(Font.FontFamily, 12, FontStyle.Bold),
+            Dock = DockStyle.Fill,
+            TextAlign = ContentAlignment.MiddleCenter
+        };
+        Label guardLabel = new Label 
+        { 
+            Text = "Guard", 
+            Font = new Font(Font.FontFamily, 12, FontStyle.Bold),
+            Dock = DockStyle.Fill,
+            TextAlign = ContentAlignment.MiddleCenter
+        };
+        Label hiltLabel = new Label 
+        { 
+            Text = "Hilt", 
+            Font = new Font(Font.FontFamily, 12, FontStyle.Bold),
+            Dock = DockStyle.Fill,
+            TextAlign = ContentAlignment.MiddleCenter
+        };
 
         mainLayout.Controls.Add(bladeLabel, 0, 0);
         mainLayout.Controls.Add(guardLabel, 1, 0);

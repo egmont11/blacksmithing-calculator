@@ -35,8 +35,13 @@ partial class Form1
         // 
         AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
         AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-        ClientSize = new System.Drawing.Size(1258, 724);
-        StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds;
+        ClientSize = new System.Drawing.Size(400, 200);
+        
+        // In Form1.Designer.cs, inside InitializeComponent()
+        this.ClientSize = new System.Drawing.Size(800, 600);
+        this.MinimumSize = new System.Drawing.Size(800, 600);
+        this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+
         Text = "Blacksmithing Calculator";
         ResumeLayout(false);
     }
